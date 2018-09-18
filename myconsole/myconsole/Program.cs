@@ -10,6 +10,10 @@ namespace myconsole
     {
         static void Main(string[] args)
         {
+            var target = -5; var num =  3;
+
+            target = -num; // Noncompliant; target = -3. Is that really what's meant?
+            target = +num; // Noncompliant; target = 3
         }
     }
 }
