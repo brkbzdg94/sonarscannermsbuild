@@ -14,6 +14,8 @@ namespace myconsole
 
             target = -num; // Noncompliant; target = -3. Is that really what's meant?
             target = +num; // Noncompliant; target = 3
+
+            Console.WriteLine(target);
         }
     }
 }
